@@ -7,6 +7,9 @@ import { PeopleComponent } from './people/people.component';
 import { FilmsComponent } from './films/films.component';
 import { HomeComponent } from './home/home.component';
 import { PlanetsComponent } from './planets/planets.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { SpeciesComponent } from './species/species.component';
+import { StarshipsComponent } from './starships/starships.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { PlanetsComponent } from './planets/planets.component';
     PeopleComponent,
     FilmsComponent,
     HomeComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    VehiclesComponent,
+    SpeciesComponent,
+    StarshipsComponent
   ],
   imports: [
     BrowserModule,
