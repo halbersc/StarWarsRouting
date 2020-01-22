@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PeopleComponent } from './people/people.component';
 import { FilmsComponent } from './films/films.component';
 import { HomeComponent } from './home/home.component';
+import { PlanetsComponent } from './planets/planets.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     PeopleComponent,
     FilmsComponent,
-    HomeComponent
+    HomeComponent,
+    PlanetsComponent
   ],
   imports: [
     BrowserModule,
