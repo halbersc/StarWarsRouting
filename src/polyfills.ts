@@ -57,6 +57,10 @@
  */
 import 'zone.js/dist/zone';  // Included with Angular CLI.
 
+// add jquery for syncfusion
+import * as jquery from 'jquery';
+window['jQuery'] = jquery;
+window['$'] = jquery;
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
