@@ -1,0 +1,42 @@
+<div style="margin-left:-200px;margin-top:-10px;">
+    <a  routerLink="/home" >
+      <img
+      width="20"
+      alt="Home"
+      src="assets/home.jpg"
+    /> Volver al inicio
+      </a>
+  </div>
+  <br />
+  <!-- {{ objPerson | json }}    -->
+  <div>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td><b>Name</b></td>
+        <td>{{ objPerson.name }}</td>
+        <td><b>Height</b></td>
+        <td>{{ objPerson.height }}</td>
+      </tr>
+      <tr>
+        <td><b>Mass</b></td>
+        <td>{{ objPerson.mass }}</td>
+        <td><b>Hair Color</b></td>
+        <td>{{ objPerson.hair_color }}</td>
+      </tr>
+      <tr>
+        <td><b>Skin Color</b></td>
+        <td>{{ objPerson.skin_color }}</td>
+        <td><b>Eye Color</b></td>
+        <td>{{ objPerson.eye_color }}</td>
+      </tr>
+      <tr>
+        <td><b>Birth Year</b></td>
+        <td>{{ objPerson.birth_year }}</td>
+        <td><b>Gender</b></td>
+        <td>{{ objPerson.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    

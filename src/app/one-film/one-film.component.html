@@ -1,0 +1,36 @@
+<div style="margin-left:-200px;margin-top:-10px;">
+    <a  routerLink="/home" >
+      <img
+      width="20"
+      alt="Home"
+      src="assets/home.jpg"
+    /> Volver al inicio
+      </a>
+  </div>
+  <br />
+  <!-- {{ objFilm | json }}    -->
+  <div>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td><b>Title</b></td>
+        <td>{{ objFilm.title }}</td>
+        <td><b>Episode ID</b></td>
+        <td>{{ objFilm.episode_id }}</td>
+      </tr>
+      <tr>
+        <td><b>Director</b></td>
+        <td>{{ objFilm.director }}</td>
+        <td><b>Producer</b></td>
+        <td>{{ objFilm.producer }}</td>
+      </tr>
+      <tr>
+        <td colspan="4"><b>Opening crawl</b></td>
+      </tr>  
+      <tr>
+        <td colspan="4">{{ objFilm.opening_crawl }}</td>
+      </tr>  
+    </tbody>
+  </table>
+  </div>
+    

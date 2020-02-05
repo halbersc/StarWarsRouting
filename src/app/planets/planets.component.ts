@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PlanetsService } from '../services/planets.service';
 
 @Component({
   selector: 'app-planets',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planets.component.css']
 })
 export class PlanetsComponent implements OnInit {
+  objPlanets: any[] = [];
+  objResults: any[] = [];
 
-  constructor() { }
+
+  constructor(private planetsService: PlanetsService) { 
+
+    planetsService.getPlanets().subscribe(
+      (data) => {
+        this.objPlanets = data;
+        this.objResults = this.objPlanets['results']
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
+  }
 
   ngOnInit() {
+
   }
 
 }

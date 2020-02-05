@@ -1,1 +1,30 @@
-<p>starships works!</p>
+<div style="margin-left:-550px;margin-top:-10px;">
+    <a  routerLink="/home" >
+      <img
+      width="20"
+      alt="Home"
+      src="assets/home.jpg"
+    /> Volver al inicio
+      </a>
+  </div>
+  <br />
+<!--    {{ objStarships | json }}      -->
+  <div>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let objResult of objResults'>
+        <td>
+          <a  routerLink="/onestarship/" >
+            {{ objResult.name }}
+            </a>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    

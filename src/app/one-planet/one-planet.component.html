@@ -1,0 +1,42 @@
+<div style="margin-left:-200px;margin-top:-10px;">
+    <a  routerLink="/home" >
+      <img
+      width="20"
+      alt="Home"
+      src="assets/home.jpg"
+    /> Volver al inicio
+      </a>
+  </div>
+  <br />
+  <!-- {{ objPlanet | json }}    -->
+  <div>
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <td><b>Name</b></td>
+        <td>{{ objPlanet.name }}</td>
+        <td><b>Rotation Period</b></td>
+        <td>{{ objPlanet.rotation_period }}</td>
+      </tr>
+      <tr>
+        <td><b>Orbital Period</b></td>
+        <td>{{ objPlanet.orbital_period }}</td>
+        <td><b>Diameter</b></td>
+        <td>{{ objPlanet.diameter }}</td>
+      </tr>
+      <tr>
+        <td><b>Climate</b></td>
+        <td>{{ objPlanet.climate }}</td>
+        <td><b>Gravity</b></td>
+        <td>{{ objPlanet.gravity }}</td>
+      </tr>
+      <tr>
+        <td><b>terrain</b></td>
+        <td>{{ objPlanet.terrain }}</td>
+        <td><b>Population</b></td>
+        <td>{{ objPlanet.population }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    

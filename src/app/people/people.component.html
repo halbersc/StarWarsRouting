@@ -1,1 +1,31 @@
-<p>people works!</p>
+<div style="margin-left:-550px;margin-top:-10px;">
+    <a  routerLink="/home" >
+      <img
+      width="20"
+      alt="Home"
+      src="assets/home.jpg"
+    /> Volver al inicio
+      </a>
+  </div>
+  <br />
+ <!--   {{ objPeople | json }}      -->
+  <div>
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let objResult of objResults'>
+        <td>
+          <a  routerLink="/oneperson/" >
+            {{ objResult.name }}
+            </a>
+          </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    

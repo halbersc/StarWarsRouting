@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { SpeciesService } from '../services/species.service';
 
 @Component({
   selector: 'app-species',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./species.component.css']
 })
 export class SpeciesComponent implements OnInit {
+  objSpecies: any[] = [];
+  objResults: any[] = [];
 
-  constructor() { }
+
+  constructor(private SpeciesService: SpeciesService) { 
+
+    SpeciesService.getSpecies().subscribe(
+      (data) => {
+        this.objSpecies = data;
+        this.objResults = this.objSpecies['results']
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
+  }
 
   ngOnInit() {
+
   }
 
 }
